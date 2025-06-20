@@ -1,5 +1,7 @@
 from google.adk.agents import Agent
-from multi_tool_agent.tools.query_tool import query_courses
+from multi_tool_agent.tools.list_courses import list_courses
+from multi_tool_agent.tools.get_course_detail import get_course_detail
+
 
 root_agent = Agent(
     name="multi_tool_agent",
@@ -10,5 +12,5 @@ root_agent = Agent(
         "You can filter using courseId, batch, or any other field, and request only the fields you need. "
         "E.g., just the courseName, or name + duration. Adapt based on user's query."
     ),
-    tools=[query_courses],
+    tools=[list_courses,get_course_detail],
 )
