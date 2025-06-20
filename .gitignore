@@ -1,3 +1,5 @@
 firestore.json
 .venv
 multi_tool_agent/__pycache__
+env
+multi_tool_agent/tools/__pycache__
