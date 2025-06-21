@@ -1,5 +1,5 @@
 from google.adk.agents import Agent
-from multi_tool_agent.tools.firestore_query import get_course_details,list_courses
+from CustomerDatabaseAgent.database_tools.firestore_query import get_course_details,list_courses
 
 
 root_agent = Agent(
